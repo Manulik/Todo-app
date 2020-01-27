@@ -1,0 +1,84 @@
+.todoapp {
+    width: 500px;
+    min-height: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 60px;
+}
+* {
+  box-sizing: border-box;
+}
+
+.new-todo {
+    width: 80%;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+}
+
+.new-todo[placeholder] {
+    text-align: center;
+    font-size: 15px;
+}
+
+.todo-list {
+    list-style-type: none;
+    text-align: center;
+}
+
+.todo-list li {
+    width: 383px;
+    height: 40px;
+    background: white;
+    border-radius: 3px;
+    position: relative;
+    left: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.toggle {
+    width: 23px;
+    height: 23px;
+}
+.toggle:hover {
+    cursor: pointer;
+}
+
+.destroy {
+    margin-top: 3px;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    outline: none;
+    background-image: url('https://avatanplus.com/files/resources/mid/5968a2c8f2ed115d40bbe123.png');
+    background-size: 100%;
+}
+.destroy:hover {
+    cursor: pointer;
+}
+.destroy:onclick {
+    background: red;
+}
+
+.todo-list li label {
+    margin-top: 5px;
+}
+.completed {
+    text-decoration: line-through;
+    color: #ddd;
+}
+.footer {
+    display: flex;
+}
+.footer span {
+    position: relative;
+    left: 52px;
+}
